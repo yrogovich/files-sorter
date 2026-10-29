@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Downloads Sorter</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>Downloads Sorter</h1>
+      <p id="dir">&nbsp;</p>
+    </div>
+    <label class="switch" title="Folders are filed by what's inside: installers, courses (mostly video), documents…">
+      <input type="checkbox" id="folders-opt">
+      <span class="track"></span>
+      <span class="lbl">Sort folders too</span>
+    </label>
+    <label class="switch" title="Every few seconds, files that have finished downloading are filed away">
+      <input type="checkbox" id="auto">
+      <span class="track"></span>
+      <span class="lbl">Keep sorted automatically</span>
+    </label>
+  </header>
+
+  <main id="stage" aria-live="polite">
+    <div id="folders"></div>
+    <div id="cards"></div>
+    <div id="empty" hidden>
+      <div class="check">✓</div>
+      <h2>Everything is in its place</h2>
+      <p>New downloads will show up here.</p>
+    </div>
+    <button id="sort" class="sort" hidden></button>
+  </main>
+
+  <footer class="bar">
+    <div id="status">Looking at your downloads…</div>
+    <div class="actions">
+      <button id="undo" class="ghost" hidden>Undo last sort</button>
+      <button id="rescan" class="ghost">Rescan</button>
+    </div>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>

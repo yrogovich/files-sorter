@@ -1,0 +1,13 @@
+{
+  "name": "downloads-sorter",
+  "version": "1.0.0",
+  "description": "Sort your Downloads folder into tidy folders, with a satisfying animation.",
+  "main": "server.js",
+  "bin": { "downloads-sorter": "server.js" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
