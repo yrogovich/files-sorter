@@ -6,7 +6,7 @@
 
   const META = {
     Images: ['🖼️', 200], Videos: ['🎬', 340], Audio: ['🎵', 280], Documents: ['📄', 215],
-    Spreadsheets: ['📊', 145], Presentations: ['📽️', 25], Archives: ['🗜️', 45], Courses: ['🎓', 5], Installers: ['💿', 260],
+    Spreadsheets: ['📊', 145], Presentations: ['📽️', 25], Archives: ['🗜️', 45], Courses: ['🎓', 5], 'Figma exports': ['✏️', 330], Installers: ['💿', 260],
     Code: ['💻', 170], Design: ['🎨', 315], Fonts: ['🔤', 70], Other: ['🗂️', 230],
   };
   const hashHue = (s) => [...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 360, 7);
